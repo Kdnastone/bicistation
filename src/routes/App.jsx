@@ -1,28 +1,31 @@
-import { useState } from 'react'
-import viteLogo from '/icon-bicy3.png'
+import { useState } from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
+import Parking from "../pages/Parking";
+import Rent from "../pages/Rent";
+import Header from '../components/basics/Header';
+import Footer from '../components/basics/Footer';
+
+const App = () => {
   return (
-    <>
-      <div>
+    <Router>
+      <Header />
+      <div className="main-content">
+        <Routes>
+          <Route path="/Parking" element={<Parking />} />
+          <Route path="/Rent" element={<Rent />} />
 
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+          {/* Redirigir a /Rent por defecto */}
+          <Route path="/" element={<Navigate to="/Rent" replace />} />
 
-export default App
+          {/* Ruta para manejar 404 Not Found */}
+          <Route path="*" element={<div>404 Not Found</div>} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
+};
+
+export default App;
