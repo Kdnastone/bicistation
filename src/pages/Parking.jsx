@@ -1,3 +1,9 @@
-import React from "react";
+import React from 'react'
 
-import Parking from "../pages/Parking"
+function Parking() {
+  return (
+    <div>Parking</div>
+  )
+}
+
+export default Parking
