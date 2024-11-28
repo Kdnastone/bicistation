@@ -1,9 +1,7 @@
-import React from 'react'
-
-function Rent() {
+export const Rent = () => {
   return (
     <div>Rent</div>
-  )
-}
+  );
+};
 
-export default Rent
+export default Rent;
