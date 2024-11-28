@@ -10,7 +10,7 @@ Despliegue [BiciStation](https://bicistation.netlify.app)
   <tr>
     <td align="center">
       <img src="./public/sofi.jpeg" alt="andrea" width="200" height="200"><br>
-      Andrea
+      Sofi
     </td>
         <td align="center">
       <img src="./public/leslye.png" alt="andrea" width="200" height="200"><br>
