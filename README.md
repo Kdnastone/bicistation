@@ -13,8 +13,8 @@ Despliegue [BiciStation](https://bicistation.netlify.app)
       Andrea
     </td>
         <td align="center">
-      <img src="./public/leslye.jpeg" alt="andrea" width="200" height="200"><br>
-      Anyi
+      <img src="./public/leslye.png" alt="andrea" width="200" height="200"><br>
+      Leslye
     </td>
     <td align="center">
       <img src="./public/sandra.jpeg" alt="Sandra" width="200" height="200"><br>
