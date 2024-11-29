@@ -4,7 +4,7 @@ function ContainerCards({item, stations }) {
       {stations.map((station) => (
         <div
           key={station.id}
-          className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+          className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-2 border-[#D9ED92]"
         >
           <h2 className="text-xl font-semibold text-[#184E77] mb-4">{station.name}</h2>
           

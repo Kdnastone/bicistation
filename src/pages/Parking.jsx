@@ -6,12 +6,12 @@ const Parking = () => {
   const [stations, setStations] = useState([]);
   const item = true
 
-  return (
+return (
     <div>
       <GlobalForm setStations={setStations} />
       <ContainerCards item={item} stations={stations}/>
     </div>
-  );
+  );  
 };
 
 export default Parking;

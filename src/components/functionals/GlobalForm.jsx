@@ -75,7 +75,7 @@ const GlobalForm = ({ setStations }) => {
   };
 
   return (
-    <form className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg mt-8">
+    <form className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg mt-8 border-2 border-[#52B69A]">
       <h1 className="text-3xl font-semibold text-[#184E77] mb-6 text-center">Formulario de selección</h1>
       
       <div className="mb-6">
