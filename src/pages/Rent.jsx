@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react';
+import GlobalForm from './GlobalForm';
+import ContainerCards from '../components/functionals/ContainerCards';
 
-function Rent() {
+const Rent = () => {
+  const [stations, setStations] = useState([]);
+  const item = false
+
   return (
-    <div>Rent</div>
-  )
-}
+    <div>
+      <GlobalForm setStations={setStations} />
+      <ContainerCards item={item} stations={stations}/>
+    </div>
+  );
+};
 
-export default Rent
+export default Rent ;
