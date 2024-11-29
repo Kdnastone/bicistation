@@ -8,13 +8,13 @@ export const Home = () => {
         <div className="mt-8 flex justify-center space-x-6 mb-6">
         <NavLink 
           to="/Parking" 
-          className="px-10 py-4 bg-[#184E77] text-white rounded-lg hover:bg-[#B5E48C] hover:text-[#1E6091] transition-colors text-xl">
+          className="px-10 py-4 bg-[#184E77] text-white rounded-lg hover:bg-[#34A0A4] transition-colors text-xl">
           Parquear
         </NavLink>
         
         <NavLink 
           to="/Rent" 
-          className="px-10 py-4 bg-[#B5E48C] text-[#184E77] rounded-lg hover:bg-[#184E77] hover:text-white transition-colors text-xl">
+          className="px-10 py-4 bg-[#B5E48C] text-[#184E77] rounded-lg hover:bg-[#34A0A4] hover:text-white transition-colors text-xl">
           Alquilar
         </NavLink>
       </div>
