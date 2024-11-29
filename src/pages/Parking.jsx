@@ -7,7 +7,7 @@ const Parking = () => {
   const item = true
 
 return (
-    <div>
+    <div className='div'>
       <GlobalForm setStations={setStations} />
       <ContainerCards item={item} stations={stations}/>
     </div>

@@ -7,7 +7,7 @@ const Rent = () => {
   const item = false
 
   return (
-    <div>
+    <div className='div'>
       <GlobalForm setStations={setStations} />
       <ContainerCards item={item} stations={stations}/>
     </div>
