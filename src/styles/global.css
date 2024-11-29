@@ -4,3 +4,6 @@ body{
 html{
     min-width: 100vw;
 }
+.div{
+    min-height: 60vh;
+}

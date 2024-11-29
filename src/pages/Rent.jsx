@@ -8,7 +8,7 @@ const Rent = () => {
   const title = 'Alquiler'
 
   return (
-    <div>
+    <div className='div'>
       <GlobalForm setStations={setStations} title={title} />
       <ContainerCards item={item} stations={stations}/>
     </div>
