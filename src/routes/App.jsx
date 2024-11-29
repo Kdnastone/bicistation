@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
+
 import Parking from "../pages/Parking";
 import Rent from "../pages/Rent";
 import Header from '../components/basics/Header';
