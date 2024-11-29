@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import GlobalForm from './GlobalForm';
+import GlobalForm from '../components/functionals/GlobalForm';
 import ContainerCards from '../components/functionals/ContainerCards';
 
 const Parking = () => {
