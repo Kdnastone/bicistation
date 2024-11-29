@@ -1,6 +1,6 @@
 # BiciStation: Eficiencia digital, compromiso ambiental.
 
-Esta es una aplicación desarrollada por el equipo de TechNova Girls.<br>
+Esta es una aplicación desarrollada por el equipo de TechNova Girls para BiciRoads.<br>
 El proyecto permite a los usuarios de bicicletas geolocalizar estaciones de parqueo y puntos de alquiler, facilitando su acceso según la ciudad en la que se encuentren.<br>
 De esta manera, se fomenta el uso de la bicicleta como una alternativa de transporte ecológica, contribuyendo a la reducción del impacto ambiental y promoviendo una movilidad más sostenible.<br>
 
