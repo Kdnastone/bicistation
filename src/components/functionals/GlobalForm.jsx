@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 
-const GlobalForm = ({ setStations }) => {
+const GlobalForm = ({ setStations, title }) => {
 
   const url = 'https://api.citybik.es/v2/networks'; 
 
@@ -76,7 +76,7 @@ const GlobalForm = ({ setStations }) => {
 
   return (
     <form className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg mt-8 border-2 border-[#52B69A]">
-      <h1 className="text-3xl font-semibold text-[#184E77] mb-6 text-center">Formulario de selección</h1>
+      <h1 className="text-3xl font-semibold text-[#184E77] mb-6 text-center">{title}</h1>
       
       <div className="mb-6">
         <label htmlFor="country" className="block text-lg font-medium text-[#184E77] mb-2">
