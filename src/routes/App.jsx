@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Home, Parking, Rent, Error404} from "../pages/Ruteo";
+import { Home, Parking, Rent, Error404, About} from "../pages/Ruteo";
 import Navbar from '../components/basics/Navbar';
 import Footer from '../components/basics/Footer';
 
@@ -12,6 +12,7 @@ const App = () => {
         <Route path="/Parking" element={<Parking />} />
         <Route path="/Rent" element={<Rent />} />
         <Route path="Error404" element={<Error404 />} />
+        <Route path="About" element={<About />} />
       </Routes>
       <Footer />
     </Router>

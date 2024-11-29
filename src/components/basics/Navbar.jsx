@@ -3,7 +3,7 @@ import logo from "../../assets/icon-app.jpeg";
 
 const Navbar = () => {
   return (
-    <nav className="bg-[#D9ED92] shadow-md h-25 overflow-hidden mb-4">
+    <nav className="bg-[#D9ED92] shadow-md h-25 overflow-hidden">
       <div className="container flex items-center justify-between mx-auto">
         <div className="flex items-center">
         <NavLink to="/" className="w-16 h-16 rounded-full bg-[#D9ED92] flex items-center justify-center overflow-hidden mr-3">
@@ -29,9 +29,9 @@ const Navbar = () => {
                 isActive ? "font-bold border-b-2 border-[#184E77]" : ""
               }`
             }
-            to={"/AcercaDeNosotros"}
+            to={"/About"}
           >
-            Acerca De Nosotros
+            Conócenos
           </NavLink>
         </div>
       </div>
