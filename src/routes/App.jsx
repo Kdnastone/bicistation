@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home, Parking, Rent, Error404} from "../pages/Ruteo";
 import Navbar from '../components/basics/Navbar';
+
 import Footer from '../components/basics/Footer';
 
 const App = () => {
