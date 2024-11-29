@@ -5,10 +5,11 @@ import ContainerCards from '../components/functionals/ContainerCards';
 const Rent = () => {
   const [stations, setStations] = useState([]);
   const item = false
+  const title = 'Alquiler'
 
   return (
     <div className='div'>
-      <GlobalForm setStations={setStations} />
+      <GlobalForm setStations={setStations} title={title} />
       <ContainerCards item={item} stations={stations}/>
     </div>
   );

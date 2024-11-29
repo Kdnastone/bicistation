@@ -5,10 +5,11 @@ import ContainerCards from '../components/functionals/ContainerCards';
 const Parking = () => {
   const [stations, setStations] = useState([]);
   const item = true
+  const title = 'Parquear'
 
 return (
     <div className='div'>
-      <GlobalForm setStations={setStations} />
+      <GlobalForm setStations={setStations} title= {title}/>
       <ContainerCards item={item} stations={stations}/>
     </div>
   );  
