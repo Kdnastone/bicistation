@@ -1,23 +1,38 @@
-import { FaGithub, FaWhatsapp, FaFacebook, FaInstagram, FaPhone, FaEnvelope } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaWhatsapp,
+  FaFacebook,
+  FaInstagram,
+  FaPhone,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="py-6 text-[#B5E48C] bg-[#184E77]">
-      <div className="container flex flex-col items-center justify-center mx-auto text-center">
-        <div className="mb-4">
+      <div className="container mx-auto text-center">
+        {/* Información del sitio */}
+        <div className="mb-6">
           <p className="text-lg font-bold">BiciStation</p>
-          <p className="text-sm">&copy; {new Date().getFullYear()} - Todos los derechos reservados.</p>
+          <p className="text-sm">
+            &copy; {new Date().getFullYear()} - Todos los derechos reservados.
+          </p>
         </div>
 
-        <div className="flex space-x-6">
-        <div className="flex items-center justify-center mt-2">
-          <FaPhone className="mr-2" /> 
-          <span>(+57) 3128020086</span>
+        {/* Información de contacto */}
+        <div className="flex flex-col sm:flex-row sm:justify-center sm:space-x-10 mb-6">
+          <div className="flex items-center justify-center mt-2 sm:mt-0">
+            <FaPhone className="mr-2" />
+            <span>(+57) 3128020086</span>
+          </div>
+          <div className="flex items-center justify-center mt-2 sm:mt-0">
+            <FaEnvelope className="mr-2" />
+            <span>bicistation@gmail.com</span>
+          </div>
         </div>
-        <div className="flex items-center justify-center mt-2">
-          <FaEnvelope className="mr-2" />
-          <span>bicistation@gmail.com</span>
-        </div>
+
+        {/* Íconos de redes sociales */}
+        <div className="flex flex-wrap justify-center space-x-4">
           <a
             href="https://github.com/Kdnastone/bicistation"
             target="_blank"
@@ -42,10 +57,10 @@ const Footer = () => {
           >
             <FaWhatsapp size={24} />
           </a>
-          <a 
-            href="https://instagram.com/petshop" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://instagram.com/petshop"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-[#52B69A]"
           >
             <FaInstagram size={24} />
