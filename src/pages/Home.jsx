@@ -8,17 +8,17 @@ export const Home = () => {
         <div className="mt-8 flex justify-center space-x-6 mb-6">
         <NavLink 
           to="/Parking" 
-          className="px-10 py-4 bg-[#184E77] text-white rounded-lg hover:bg-[#76C893] hover:text-[#1E6091] transition-colors text-xl">
+          className="px-10 py-4 bg-[#184E77] text-white rounded-lg hover:bg-[#B5E48C] hover:text-[#1E6091] transition-colors text-xl">
           Parquear
         </NavLink>
         
         <NavLink 
           to="/Rent" 
-          className="px-10 py-4 bg-[#76C893] text-[#184E77] rounded-lg hover:bg-[#184E77] hover:text-white transition-colors text-xl">
+          className="px-10 py-4 bg-[#B5E48C] text-[#184E77] rounded-lg hover:bg-[#184E77] hover:text-white transition-colors text-xl">
           Alquilar
         </NavLink>
       </div>
-      <div className="bg-[#D9ED92] shadow-lg rounded-lg p-6 mt-6 max-w-3xl mx-auto">
+      <div className="bg-[#D9ED92] shadow-lg rounded-lg p-6 mt-6 max-w-3xl mx-auto mb-6">
         <p className="text-lg text-gray-700 text-center">
           Esta es una aplicación desarrollada por el equipo de TechNova Girls para
           BiciRoads. El proyecto permite a los usuarios de bicicletas
