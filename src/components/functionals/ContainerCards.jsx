@@ -1,34 +1,40 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-function ContainerCards() {
-  const [stations, setStations] = useState([]);
-
-  useEffect(() => {
-    fetch('http://api.citybik.es/v2/networks/velib')
-      .then((response) => response.json())
-      .then((data) => {
-        setStations(data.network ? data.network.stations : []);
-      })
-      .catch((error) => console.error('Error cargando la información:', error));
-  }, []);
-
+function ContainerCards({item, stations }) {
   return (
-    <div className="station-list">
-      {stations.length > 0 ? (
-        stations.map((station) => (
-          <div key={station.id} className="card">
-            <h3>{station.name}</h3>
-            <p><strong>Empresa:</strong> {station.company}</p>
-            <p><strong>Nombre de la Estación:</strong> {station.name}</p>
-            <p><strong>País:</strong> {station.location.city}</p>
-            <p><strong>Ciudad:</strong> {station.location.city}, {station.location.country}</p>
-            <p><strong>Bicicletas Disponibles:</strong> {station.free_bikes}</p>
-            <p><strong>Parqueaderos Disponibles:</strong> {station.empty_slots}</p>
-          </div>
-        ))
-      ) : (
-        <p>Cargando información ...</p>
-      )}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-8">
+      {stations.map((station) => (
+        <div
+          key={station.id}
+          className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+        >
+          <h2 className="text-xl font-semibold text-[#184E77] mb-4">{station.name}</h2>
+          
+          <p className="text-md text-[#555]">
+            <strong className="font-bold text-[#184E77]">Empresa:</strong> {station.company.join(', ')}
+          </p>
+          
+          <p className="text-md text-[#555]">
+            <strong className="font-bold text-[#184E77]">País:</strong> {station.country}
+          </p>
+          
+          <p className="text-md text-[#555]">
+            <strong className="font-bold text-[#184E77]">Ciudad:</strong> {station.city}, {station.country}
+          </p>
+          
+          {item ? (
+            <p className="text-md text-[#555]">
+              <strong className="font-bold text-[#184E77]">Parqueaderos Disponibles:</strong> {station.empty_slots}
+            </p>
+          ) : (
+            <p className="text-md text-[#555]">
+              <strong className="font-bold text-[#184E77]">Bicicletas Disponibles:</strong> {station.free_bikes}
+            </p>
+          )}
+        </div>
+      ))}
     </div>
   );
 }
+
+export default ContainerCards;
