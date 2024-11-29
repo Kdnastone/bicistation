@@ -5,7 +5,7 @@ import ContainerCards from '../components/functionals/ContainerCards';
 const Parking = () => {
   const [stations, setStations] = useState([]);
   const item = true
-  const title = 'Parqueaderos'
+  const title = 'Parquear'
 
 return (
     <div>
